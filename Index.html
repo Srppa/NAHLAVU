@@ -18,206 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <style>
-        body {
-            font-family: "Montserrat";
-            background-color: #F2F2F2;
-            margin: 0;
-        }
-
-        .logo-container {
-            width: 100%;
-            max-width: 1100px;
-            margin: 40px auto 25px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo {
-            width: 150px;
-        }
-
-        .title {
-            margin-left: 20px;
-            font-size: 30px;
-            font-weight: 600;
-            color: #4bb74e;
-            cursor: pointer;
-        }
-
-        .sections-container {
-            
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-        }
-
-        .section {
-            width: 100%;
-            margin: auto;
-
-        }
-
-        .section>.header {
-            max-width: 1000px;
-            width: 100%;
-
-            margin: 15px auto;
-            display: flex;
-            justify-content: center;
-            padding: 20px 0;
-            background-color: #4bb74e;
-            border-radius: 0 50px;
-            align-items: center;
-            position: relative;
-
-        }
-
-        .section>.header>h2 {
-            text-align: center;
-            margin: 0;
-            color: #FFF;
-            cursor: pointer;
-        }
-
-        .section>.header>img {
-            margin-left: 20px;
-            width: 30px;
-            height: 17px;
-            position: absolute;
-            right: 40px;
-            top: calc(50% - 7px);
-        }
-
-        .section > .content {
-            display: none;
-            width: 100%;
-        }
-
-        .section .content-inner {
-            max-width: 1200px;
-            width: 100%;
-            margin: auto;
-            padding: 0 10px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .rotated {
-            transform: rotate(180deg);
-        }
-
-        .widget-container{
-            width: 25%;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .widget-image{
-            width: 100%;
-            position: relative;
-        }
-
-        .widget-image img{
-            width: 100%;
-        }
-
-        .done-marker{
-            position: absolute;
-            right: 7px;       
-            bottom: 15px;
-            background: #fff;
-            padding: 5px 10px 6px;
-            border-radius: 15px;
-        }
-
-        .done-marker.not-done{
-            background-color: #888;
-            color: #FFF;
-            text-decoration: line-through;
-        }
-
-        .done-marker.done{
-            background-color: #4bb74e;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .widget-info{
-            background-color: #FFF;
-        }
-
-        .widget-info{
-            margin-top: -5px;
-            display: flex;
-            flex-direction: column;
-            padding-left: 15px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #4bb74e;
-        }
-
-        .widget-info h4{
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-
-        .widget-info a{
-            color: #4bb74e;
-            text-decoration: none;
-            margin-top: 10px;
-        }
-
-        .widget-info .arrow{
-            font-size: 22px;
-        }
-
-        .widget-container:hover .widget-info a{
-            text-decoration: underline;
-        }
-
-        footer{
-            background-color: #116269;
-            margin-top: 60px;
-            padding: 60px 0;
-            width: 100%;
-            
-            
-        }
-        .footer-container{
-            margin: auto;
-            max-width: 1000px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .footer-logo{
-        }
-        .footer-logo img{
-            width: 300px;
-        }
-        .footer-text{
-            color: #FFF;
-            
-        }
-        .footer-socials{
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-
-        }
-        .footer-socials img{
-            width: 40px;
-            color: #FFF;
-            margin-left: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"><link >
 </head>
 
 <body>
@@ -227,72 +28,34 @@
         </a>
         <span class="title">E-LEARNING</span>
     </div>
+    <div class="group-name-container">
+        <h2>Neformální pečující o člověka zažívající duševní onemocnění</h2>
+    </div>
+    <div class="intro-container">
+        <div class="left-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus arcu id finibus pharetra. Ut cursus bibendum dui nec lobortis. Maecenas sollicitudin mauris id felis accumsan viverra. Phasellus vitae ex eget leo dignissim feugiat. Donec dictum tristique ligula. Pellentesque dapibus elit in nibh mollis rutrum. Aliquam placerat orci a suscipit eleifend.</p>
+            <p>Ut sollicitudin convallis egestas. Sed a tellus in magna lacinia vulputate ut eget erat. Fusce tempus congue ipsum interdum suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tempor nunc sed justo semper eleifend.</p>
+        </div>
+        <div class="right-document">
+            <div class="widget-container">
+                <div class="widget-image">
+                    <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
+                    <div class="done-marker not-done">hotovo</div>
+                </div>
+                <div class="widget-info">
+                    <h4 class="info-title">Shrnutí programu</h4>
+                    <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
+                        target="_blank" rel="noopener">brožura v .pdf</a>
+                    <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
+                        target="_blank" class="arrow"><span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="sections-container">
         <div class="section">
             <div class="header">
-                <h2>1. SITUACE V OBLASTI DUŠEVNÍHO ZDRAVÍ <span>(4/4)</span></h2>
-                <img src="/images/arrow_white.png" alt="Girl in a jacket">
-            </div>
-            <div class="content">
-                <div class="content-inner">
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h2>2. POTŘEBY A VZTAHY <span>(2/4)</span></h2>
+                <h2>Pracovní listy <span>(2/4)</span></h2>
                 <img src="/images/arrow_white.png" alt="Girl in a jacket">
             </div>
             <div class="content">
@@ -354,206 +117,20 @@
         </div>
         <div class="section">
             <div class="header">
-                <h2>3. LIDSKÝ MOZEK, STRES A ODPOČINEK <span>(0/4)</span></h2>
+                <h2>Doplňující materiály <span>(1/4)</span></h2>
                 <img src="/images/arrow_white.png" alt="Girl in a jacket">
             </div>
             <div class="content">
-                <div class="content-inner">
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker not-done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
+                <div class="content-inner video">
+                    <div class="video-container">
+                        <iframe width="600" height="400" src="https://www.youtube.com/watch?v=cIDjIKgv9mE">
+
+                        </iframe> 
                     </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker not-done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker not-done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker not-done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h2>4. SEBEPOJETÍ <span>(1/2)</span></h2>
-                <img src="/images/arrow_white.png" alt="Girl in a jacket">
-            </div>
-            <div class="content">
-                <div class="content-inner">
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker not-done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h2>5. KOMUNIKAČNÍ DOVEDNOSTI + ZPLNOMOCNĚNÍ <span>(1/2)</span></h2>
-                <img src="/images/arrow_white.png" alt="Girl in a jacket">
-            </div>
-            <div class="content">
-                <div class="content-inner">
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker not-done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h2>6. ODBORNÁ PÉČE A SVÉPOMOCNÉ AKTIVITY <span>(1/2)</span></h2>
-                <img src="/images/arrow_white.png" alt="Girl in a jacket">
-            </div>
-            <div class="content">
-                <div class="content-inner">
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker not-done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h2>7. WELLBEING + ODOLNOST <span>(1/2)</span></h2>
-                <img src="/images/arrow_white.png" alt="Girl in a jacket">
-            </div>
-            <div class="content">
-                <div class="content-inner">
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
-                    </div>
-                    <div class="widget-container">
-                        <div class="widget-image">
-                            <img src="/images/NA-ROVINU-Manual-prav-brozura-1024x939.png">
-                            <div class="done-marker not-done">hotovo</div>
-                        </div>
-                        <div class="widget-info">
-                            <h4 class="info-title">Manuál práv</h4>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" rel="noopener">brožura v .pdf</a>
-                            <a href="https://narovinu.net/wp-content/uploads/2023/12/NA-ROVINU_Manual-prav-lidi-se-zkusenosti-s-dusevnim-onemocnenim.pdf"
-                                target="_blank" class="arrow"><span>→</span></a>
-                        </div>
+                    <div class="video-container">
+                        <iframe width="600" height="400" src="https://www.youtube.com/watch?v=cIDjIKgv9mE">
+
+                        </iframe> 
                     </div>
                 </div>
             </div>
