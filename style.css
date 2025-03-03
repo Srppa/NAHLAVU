@@ -27,9 +27,20 @@ body {
 
 .group-name-container{
     text-align: center;
-    font-size: 20px;
     margin-bottom: 20px;
 }
+
+.group-name-container h2{
+    font-size: 28px;
+    margin: 0;
+}
+
+.group-name-container h3{
+    font-size: 17px;
+    color: #666;
+    margin: 0;
+}
+
 
 .intro-container{
     display: flex;
@@ -205,6 +216,11 @@ body {
 
 .content-inner.video .video-container{
     margin-bottom: 30px;
+    position: relative;
+}
+
+.content-inner.video .video-container .done-marker{
+    bottom: 53px;
 }
 
 footer{
