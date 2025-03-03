@@ -68,6 +68,10 @@ body {
     text-align: justify;
 }
 
+.intro-container.work{
+    flex-direction: row-reverse;
+}
+
 .sections-container {
     
     width: 100%;
@@ -143,9 +147,18 @@ body {
 .widget-image{
     width: 100%;
     position: relative;
+
 }
 
-.widget-image img{
+.widget-image .in-frame{
+    left: 21.2%;
+    top: 5.8%;
+    width: 57.1%;
+    height: 86.9%;
+    position: absolute;
+}
+
+.widget-image .frame{
     width: 100%;
 }
 
@@ -220,7 +233,39 @@ body {
 }
 
 .content-inner.video .video-container .done-marker{
-    bottom: 53px;
+    bottom: 140px;
+}
+
+.content-inner.video .video-container p{
+    max-width: 640px;
+}
+
+.link-list{
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.link-list p{
+    display: block;
+
+}
+
+.link-list a{
+    display: block;
+    margin-left: 24px;
+    margin-bottom: 32px;
+    color: #2222AA;
+}
+
+.link-list .pre-sub{
+    margin-bottom: 24px;
+}
+
+.link-list .sub{
+    margin-left: 50px;
 }
 
 footer{
