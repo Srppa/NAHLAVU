@@ -369,15 +369,21 @@ footer{
     }
 }
 
-@media screen and (max-width: 650px){
-    .section > .header > h2{
-        max-width: 60%;
+@media screen and (max-width: 660px){
+    .small-hide{
+        display: none;
     }
 }
 
 @media screen and (max-width: 500px){
     .logo-container{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .sections-container .widget-container{
+        width: 100%;
     }
 }
 
