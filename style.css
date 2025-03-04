@@ -28,6 +28,7 @@ body {
 .group-name-container{
     text-align: center;
     margin-bottom: 20px;
+    margin: 0 20px;
 }
 
 .group-name-container h2{
@@ -49,6 +50,7 @@ body {
     align-items: center;
     margin: 40px auto;
     max-width: 800px;
+    margin: 0 20px;
 }
 
 .intro-container .widget-container{
@@ -78,7 +80,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .section {
@@ -250,7 +253,14 @@ body {
 
 .link-list p{
     display: block;
+    
+}
 
+.link-list p::before{
+    content: "●";
+    margin-right: 12px;
+    font-size: 24px;
+    color: #4bb74e;
 }
 
 .link-list a{
@@ -266,6 +276,11 @@ body {
 
 .link-list .sub{
     margin-left: 50px;
+}
+
+.link-list .sub p::before{
+    content: "◒";
+    font-size: 14px;
 }
 
 footer{
@@ -305,3 +320,63 @@ footer{
     color: #FFF;
     margin-left: 20px;
 }
+
+@media screen and (max-width: 900px){
+    .group-name-container{
+        margin-bottom: 0;
+    }
+
+
+    .intro-container, 
+    .intro-container.work{
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .intro-container.work{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .intro-container .left-text, 
+    .intro-container.work .left-text{
+        width: 100%;
+        text-align: left;
+    }
+
+    .intro-container > .right-document{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .sections-container .content-inner{
+        flex-wrap: wrap;
+    }
+
+    .sections-container .widget-container{
+        width: 50%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container > *{
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .section > .header > h2{
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .logo-container{
+        flex-direction: column;
+    }
+}
+
